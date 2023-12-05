@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pods
+  labels:
+    name: deneme-pods
+spec:
+    containers:
+    - name: salla2
+      image: nginx:1.7.9
+      ports:
+        - containerPort: 80
+      env:
+        - name: username
+          value: "mesut"
+        - name: password
+          value: "123456"
